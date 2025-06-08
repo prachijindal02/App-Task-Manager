@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build: ./backend
+    container_name: task-backend
+    ports:
+      - "5000:5000"
+    environment:
+      NODE_ENV: production
+    # Optional: If you want to use nodemon for development (hot-reloading)
+    # volumes:
+    #   - ./backend/src:/app/src
+    # command: npm install && npm run dev (you would need a 'dev' script in package.json for nodemon)
+
+  frontend:
+    build: ./frontend
+    container_name: task-frontend
+    ports:
+      - "3000:80" # Map host port 3000 to container port 80 (Nginx default)
+    depends_on:
+      - backend
+    environment:
+      # This environment variable is read by the React app during its build process.
+      # It tells the React app where to find the backend API when running inside the Docker network.
+      REACT_APP_API_BASE_URL: http://backend:5000 # 'backend' is the service name defined in this docker-compose.yml
