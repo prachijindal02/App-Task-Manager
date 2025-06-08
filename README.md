@@ -60,5 +60,8 @@ project-root/
 ├── docker-compose.yml
 └── README.md
 
+🙋‍♀️ Author
+Made with 💙 by [Prachi Jindal]
+
 
 
