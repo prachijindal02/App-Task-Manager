@@ -9,9 +9,11 @@ This is a **full-stack Task Manager** web application built using:
 
 ---
 
-## 📸 Screenshots
+## 📸 Videos link
 
-> ✨ Add screenshots here (UI in dark/light mode, task filtering etc.)
+> ✨ FRONTEND VIDEO LINK : https://github.com/user-attachments/assets/726c03f0-2144-4f0d-abf5-f8707c081bce
+
+> ✨ BACKEND VIDEO LINK : https://github.com/user-attachments/assets/8fc3bb9a-a5d2-42df-8e7f-8db6e32af560
 
 ---
 
